@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background: #f9f9f9;
+  }
+  
+  .resumeDiv{
+    width: 70%;
+    border: 2px solid rgb(2, 2, 2);
+  }
+  
+  header{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(rgba(161, 210, 226, 0.63), #2fb5d6);
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  
+  .white{
+    color: rgb(29, 14, 240);
+  }
+  
+  header img{
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+  }
+  
+  .content{
+    width: 100%;
+    display: flex;
+  }
+  
+  .content aside{
+    width : 30%; 
+    padding-left: 40px;
+    padding-bottom: 50px;
+    background: #f9f9f9;
+  }
+  
+  .contact,
+  .education,
+  .skill,
+  .language{
+    margin-bottom: 30px;
+  }
+  
+  .contact h2,
+  .education h2,
+  .skill h2,
+  .language h2,
+  .objective h2,
+  .experience h2,
+  .refrence h2{
+    border-bottom: 3px solid #2fb5d6;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    color: #0d10e9;
+  }
+  
+  .education{
+    line-height: 16px;
+  }
+  
+  .skill ul{
+    margin-left: 17px;
+  }
+  
+  .main-content{
+    width: 70%;
+    padding-left: 50px;
+    background-color: white;
+  }
+  
+  .experience-items{
+    margin-bottom: 54px;
+  }
+  
+  .experience-items p{
+    margin-bottom: 5px;
+  }
+  
+  .experience-items ul{
+    margin-left: 18px;
+    margin-top: 15px;
+  }
+  
+  .btnDiv{
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .btn{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: white;
+    background: #00BFFF;
+    cursor: pointer;
+  
+    &:hover{
+      background: #007B9E;
+    }
+  
+    &:active{
+      transform: scale(0.95);
+    }
+    
+  }
+  
+  .hide{
+    display: none;
+  }
+  
+  
+  @media print {
+    .btnDiv{
+      display: none;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width: 786px){
+    .content{
+      flex-direction: column;
+    }
+  
+    aside, .main-content {
+      width: 100%;
+    }
+  }
